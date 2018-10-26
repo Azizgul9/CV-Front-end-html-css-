@@ -1,0 +1,29 @@
+%socials
+	display: inline-block
+	height: 48px
+	width: 33px
+	background: url(../images/head-socials.png)
+	background-repeat: no-repeat
+// @each $icon in fb,gplus,tw,vk,ytb
+// 	.icon-#{$icon}
+// 		background-image: url(../images/#{$icon}.png)
+@for $t from 1 through 4
+	$pozX: -34*($t - 1) + px
+	.social-#{$t}
+		@extend %socials
+		background-position: $pozX 0
+
+%footer-socials
+	display: inline-block
+	height: 33px
+	width: 33px
+	background: url(../images/socials.png)
+	background-repeat: no-repeat
+
+@for $i from 1 through 4
+	$pozY: -39*($i - 1)
+	@for $j from 1 through 5
+		$pozX: -39*($j - 1)
+		.ic-socials-#{$i}-#{$j}
+			@extend %footer-socials
+			background-position: #{$pozX}px #{$pozY}px

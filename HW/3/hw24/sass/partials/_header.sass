@@ -1,0 +1,52 @@
+.top
+	text-align: right
+	background: $bg-dark-color
+	font-size: 0
+	padding-right: 54px
+.logo
+	text-decoration: none
+	font-family: $ff-add
+	&__red
+		padding: 1px 13px
+		background: $bg-red
+		color: $bg-white
+		margin-right: 5px
+.header__logo
+	float: left
+	+px600
+		float: none
+	margin-right: 20px
+	font-size: 24px
+	color: $header-txt-color
+	font-weight: 700
+	padding: 12px 30px
+.navigation
+	position: relative
+	z-index: 2
+	background-color: $bg-white
+	-webkit-box-shadow: -2px 2px 1px 0px rgba(0, 0, 0, 0.7)
+	-moz-box-shadow: -2px 2px 1px 0px rgba(0, 0, 0, 0.7)
+	box-shadow: -2px 2px 1px 0px rgba(0, 0, 0, 0.7)
+.header__nav
+	text-align: right
+	+px600
+		text-align: center
+	padding-top: 20px
+.nav__list
+	margin: 0
+	padding: 0
+	list-style: none
+.nav__item
+	display: inline-block
+	padding: 0 18px 15px
+	+px365
+		padding: 0 13px 15px
+	margin: 0
+.nav__link
+	text-decoration: none
+	text-transform: uppercase
+	font-size: 13px
+	color: $header-txt-color
+	font-weight: 700
+.nav__link:hover
+	color: $bg-red

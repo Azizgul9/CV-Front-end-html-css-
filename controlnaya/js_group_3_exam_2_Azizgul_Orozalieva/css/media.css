@@ -1,0 +1,85 @@
+@media screen and (min-width: 520px){
+  header{
+    height: 117px;
+  }
+  .btn-nav{
+    display: none;
+  }
+  .logo{
+    width: 248px;
+    -webkit-background-size: auto;
+    background-size: auto;
+    display: inline-block;
+  }
+  .main-nav{
+  float: right;
+  margin:0;
+  }
+  .main-nav ul{
+    vertical-align: top;
+    position: static;
+    width: auto;
+    background: transparent;
+    margin: 0;
+    display: block !important;
+  }
+  .main-nav li{
+    display: inline-block;
+    margin: -44px -1px 0 0;
+  }
+  .main-nav li:hover a{
+    color: #ffe13e;
+  }
+  .main-nav a{
+  font-size: 16px;
+  color: #202242;
+  display: inline-block;
+  padding: 49px 17px;
+  border: none;
+ }
+ .cmnt{
+  width: 400px;
+  margin-bottom: 8%;
+}
+}
+@media screen and (min-width: 598px){
+  .main-nav ul{
+    margin-top: -12%;
+  }
+  .input-field{
+    border-left: none;
+    border-right: none;
+  }
+  .main-nav li{
+    margin: 19px 10px 0 0;
+  }
+}
+@media screen and (min-width: 600px){
+header{
+  height: 117px;
+}
+.main-nav li{
+    margin: 3px -1px 0 0;
+  }
+  .cmnt{
+  width: 300px;}
+}
+
+@media screen and (min-width: 800px){
+  .main-nav li{
+    margin: 44px -1px 0 0;
+  }
+  
+}
+@media screen and (min-width: 1200px){
+.service h3::before{
+    display: block;
+  }
+  .promo-block h1::after{
+    display: block;
+  }
+  .services{
+    background: linear-gradient(to right, #202242 0%,#202242 50%,#ffe13e 50%,#ffe13e 100%);
+  }
+}
+

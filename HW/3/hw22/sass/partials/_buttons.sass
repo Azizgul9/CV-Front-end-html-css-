@@ -1,0 +1,73 @@
+%btns
+	color: $color-txt
+	text-decoration: none
+	text-transform: uppercase
+	font-family: $ff-add
+	font-size: 15px
+	padding: 10px 20px
+	position: relative
+	display: inline-block
+	&::before
+		content: ""
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 10px 11px 0 11px
+		position: absolute
+		bottom: -10px
+		left: 50%
+		margin-left: -11px	
+.btn-red
+	@extend %btns
+	+btn($red)
+.btn-yellow
+	@extend %btns
+	+btn($yellow)
+.btn-green
+	@extend %btns
+	+btn($sea-green)
+button
+	background: transparent
+	border: none
+.btn2
+	display: inline-block
+	text-decoration: none
+	color: $color-txt
+	text-transform: uppercase
+	font-family: $ff-add
+	font-size: 15px
+	position: relative
+	&::before
+		content: ""
+		position: absolute
+		width: 14px
+		height: 14px
+		border-left: 2px solid $color-txt
+		border-bottom: 2px solid $color-txt
+		transform: rotate(-45deg)
+		bottom: -7px
+		left: 50%
+		margin-left: -8px
+	span
+		padding: 11px 47px
+		display: block
+		border: 2px solid $color-txt
+		border-bottom: none
+		&::before,
+		&::after
+			content: ""
+			width: calc(50% - 10px)
+			height: 2px
+			background: $color-txt
+			position: absolute
+			bottom: 0
+		&::before
+			left: 0
+		&::after
+			right: 0
+.btn3 span::before
+	width: calc(50% - 17px)
+	left: 7px
+.btn3 span::after
+	width: calc(50% - 17px)
+	right: 7px

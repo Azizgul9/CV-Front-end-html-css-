@@ -1,0 +1,78 @@
+@media screen and (max-width: 1024px){
+	.container .logo{
+		float: none;
+		display: inline-block;
+		margin-left: 28px;
+		margin-bottom: 6px;
+	}	
+	.container .main-nav{
+		margin-left: 0;
+	}
+	.container .main-nav a{
+		padding: 22px 29px 20px 29px;
+	}
+	.main-block{
+		height: 387px;
+	}
+	.promotion{
+		width: 50%;
+	}
+	.container .introduse-block{
+		width: 60.1%;
+	}
+	.container .price-card{
+		width: 50%;
+	}
+}
+@media screen and (max-width: 950px){
+	.service {
+    width: 30%;
+}
+}
+@media screen and (max-width: 800px){
+	.container .introduse-block{
+		width: 80.1%;
+	}
+    .about-col{
+    	width: 100%;
+    }
+}
+@media screen and (max-width: 700px){
+	.service {
+    width: 45%;
+}
+}
+@media screen and (max-width: 640px){
+    .container .main-nav a{
+    	display: block;
+		padding: 10px 29px 8px;
+		border-bottom: 1px solid rgba(255,255,255,0.5)
+	}
+	.container .main-nav a:last-child{
+		border-bottom: none;
+	}
+	.container .introduse-block{
+		width: 90.1%;
+		left: 10px;
+		bottom: 20px;
+	}
+	.promotion{
+		width: 100%;
+	}
+	.container .price-card{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 440px){
+	.service {
+    width: 100%;
+    }
+	.footer p{
+		padding: 24px 2px 4px;
+	}
+	.footer span{
+		padding: 24px 2px 20px;
+		font-size: 10px;
+	}
+
+}

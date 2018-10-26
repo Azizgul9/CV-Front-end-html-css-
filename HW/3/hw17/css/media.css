@@ -1,0 +1,50 @@
+@media screen and (max-width: 847px){
+	.container .service{
+		width: 43%;
+	}
+	.container .box{
+		width: 45%;
+	}	
+}
+@media screen and (max-width: 760px){
+	.container .box-1{
+		-webkit-transform: none;
+		        transform: none;
+	}
+}
+@media screen and (max-width: 708px){
+	.container .box,.container .item{
+		width: 80%;
+		padding: 0;
+	}
+}
+@media screen and (max-width: 684px){
+	header .logo{
+		float: none;
+	}
+	header .nav ul{
+		padding: 0;
+	}
+ header .nav ul li a{
+	padding: 10px 4px 10px 20px;
+}
+}
+@media screen and (max-width: 584px){
+	.container .service{
+		width: 41%;
+	}	
+}
+@media screen and (max-width: 420px){
+	.container .service{
+		width: 80%;
+	}
+	
+}
+@media screen and (max-width: 369px){
+	header .nav ul li{
+       margin: 6px 0;
+	}
+    header .nav ul li a{
+	   padding: 10px 40px 10px 40px;
+}
+}

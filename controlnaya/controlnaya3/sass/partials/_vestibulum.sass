@@ -1,0 +1,36 @@
+.vestibulum-block
+	background: url(../images/main-pic.jpg)
+	background-position: 50% 0
+	background-repeat: no-repeat
+	min-height: 500px
+	text-align: center
+	+px800
+		text-align: left
+%br
+	border-radius: 4px
+.promo
+	padding: 45px 10px
+	display: inline-block
+	width: percentage(531/1200)
+	transform: translateY(50%)
+	+px660
+		transform: translateY(10%)
+	color: #fff
+.main-title
+	margin: 0
+	padding: 0 12px
+	display: inline-block
+	text-transform: uppercase
+	font-size: 50px
+	+px600
+		font-size: 30px
+	line-height: 1
+	@extend %br
+.desc
+	display: inline-block
+	font-size: 16px
+	background: rgba(0,0,0,0.5)
+	line-height: 25.6px
+	padding: 15px 17px
+	margin: 5px
+	@extend %br

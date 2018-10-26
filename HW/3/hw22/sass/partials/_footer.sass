@@ -1,0 +1,55 @@
+.footer
+	padding: 40px 0
+	font-size: 16px
+.info	
+	text-align: center
+	position: relative
+	padding: 20px
+	.fc,.tw
+		display: inline-block
+		width: 25px
+		height: 25px
+		margin-left: 10px
+		margin-right: 5px
+		margin-bottom: -5px
+		background: #fff
+		border-radius: 50% 
+		position: relative
+	.tw
+		margin-left: 0
+	.fc::before
+		content: "\f39e"
+		display: inline-block
+		font-family: 'Font Awesome 5 Brands'
+		position: absolute
+		top: 14%
+		left: 32%
+		font-size: 15px
+		font-weight: 400
+		color: $bg-page
+	.tw::before
+		content: "\f099"
+		display: inline-block
+		font-family: 'Font Awesome 5 Brands'
+		position: absolute
+		top: 14%
+		left: 23%
+		font-size: 15px
+		font-weight: 400
+		color: $bg-page
+	&::after
+		content: ""
+		width: 40%
+		height: 1px
+		background: $border
+		display: block
+		position: absolute
+		left: 50%
+		bottom: 0
+		margin-left: -20%
+.info__mail,.info__tell
+	+px410
+		display: block
+		padding: 10px 0
+.yellow	
+	color: #fdbd1f

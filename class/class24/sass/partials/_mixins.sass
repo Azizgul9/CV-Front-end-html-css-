@@ -1,0 +1,26 @@
+=btn($color)
+	background: $color
+	&::before
+		border-color: $color transparent transparent transparent
+=md
+		@media screen and (max-width: 1024px)
+			@content
+%col
+	padding: 0 20px
+@for $n from 1 through 12
+	.col-#{$n}
+		@extend %col
+		+md
+			@for $n from 1 through 12
+				.col-#{$n}
+					width: percentage($n/12)
+
+=position($pos,$top: null,$right: null,$bot: null,$left: null)
+	position: $pos
+	top: $top
+	right: $right
+	bottom: $bot
+	left: $left
+@each $icon in fb,gplus,tw,vk,ytb
+	.icon-#{$icon}
+		background-image: url(../images/#{$icon}.png)

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+body{
+  color: #414141;
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.3;
+  font-size: 16px;
+  min-width: 320px;
+}
+.container{
+  min-width: 320px;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.block{
+	position: relative;
+	margin: 30px;
+	height: 300px;
+}
+@keyframes movingBox{
+	0%{left: 0;}
+	30%{background: red; transform: rotate(-45deg);}
+	65%{background: green; transform: rotate(45deg);}
+	100%{left: 500px;}
+}
+.box{
+	width: 100px;
+	height: 100px;
+	background: lightblue;
+	border:2px solid red;
+	position: absolute;
+	top: 0;
+	animation: movingBox 2s ease-in infinite alternate;
+}
+.clock{
+	width: 200px;
+	height: 200px;
+	border: 2px solid red;
+	position: relative;
+	border-radius: 50%;
+}
+.clock-center{
+	width: 10px;
+	height: 10px;
+	background: red;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 50%;
+	z-index: 10;
+}
+.hour{
+	width: 2px;
+	background: red;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	/* margin-left: -1px; */
+	transform-origin: 0 98px;
+}
+.hour-sm{
+	height: 10px;
+}
+.hour-big{
+	height: 15px;
+}
+.hour-1{
+	transform: rotate(30deg);
+}
+.hour-2{
+	transform: rotate(60deg);
+}
+.hour-3{
+	transform: rotate(90deg);
+}
+.hour-4{
+	transform: rotate(120deg);
+}
+.hour-5{
+	transform: rotate(150deg);
+}
+.hour-6{
+	transform: rotate(180deg);
+}
+.hour-7{
+	transform: rotate(210deg);
+}
+.hour-8{
+	transform: rotate(240deg);
+}
+.hour-9{
+	transform: rotate(270deg);
+}
+.hour-10{
+	transform: rotate(300deg);
+}
+.hour-11{
+	transform: rotate(330deg);
+}
+.hour-12{
+	transform: rotate(360deg);
+}
+@keyframes movingArrowSec{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+.arrowSec{
+	width: 2px;
+	height: 90px;
+	background: green;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	z-index: 8;
+	transform-origin: 0 88px;
+	animation: movingArrowSec 60s steps(60) infinite;
+}
+.arrowMin{
+	width: 2px;
+	height: 80px;
+	background: green;
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	z-index: 9;
+	transform-origin: 0 78px;
+	animation: movingArrowSec 3600s steps(60) infinite;
+}
+.animate-pic{
+  width: 300px;
+  height: 200px;
+  background: darkblue;
+  position: relative;
+  overflow: hidden;
+}
+@keyframes movingWaves {
+  0%{transform: translate(0, 0);}
+  50%{transform: translate(10px, -10px);}
+  100%{transform: translate(40px, 0);}
+}
+.waves{
+  width: 450px;
+  position: absolute;
+  bottom: -28px;
+  left: -30px;
+  animation: movingWaves 5s linear alternate infinite;
+}
+.wave{
+  width: 25%;
+  height: 50px;
+  background: #00FFFF;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: -30px;
+}
+@keyframes movinBoat{
+  0%{transform: rotate(3deg);}
+  50%{transform: rotate(0);}
+  100%{transform: rotate(-3deg);}
+}
+.boat{
+  width: 180px;
+  height: 60px;
+  background: brown;
+  border-radius: 0 0 50% 50%;
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  animation: movinBoat 5s linear alternate infinite;
+}
+@keyframes stars{
+  0%{transform: scale(0.75);}
+  50%{transform: scale(1);}
+  100%{transform: scale(1.5);}
+}
+		@keyframes stars{
+    0%{transform: scale(0.75);}
+    50%{transform: scale(1);}
+    100%{transform: scale(1.5);}
+}
+.star{
+	width: 3px;
+	height: 3px;
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 0 0 5px 1px rgba(255,255,255,1);
+	position: absolute;
+	animation: stars 3s alternate infinite;
+}
+.star_1{
+   top: 30px;
+   left: 50%;
+}

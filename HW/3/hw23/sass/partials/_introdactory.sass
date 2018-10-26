@@ -1,0 +1,39 @@
+.introdactory
+	padding: 52px 10px 57px
+	background: url(../images/bg-white.jpg)
+	margin: 0 -10px
+.cards
+	display: flex
+	flex-wrap: wrap
+	.card
+		padding: 0 22px 
+		width: percentage(320/960)
+		+px700
+			width: 100%
+		&-title
+			margin: 0
+			font-family: $ff-add
+			font-size: 18px
+			font-weight: 400
+			white-space: nowrap
+			&::before
+				content: "\f013"
+				font-family: 'Font Awesome 5 Free'
+				font-weight: 900
+				text-align: center
+				color: #fff
+				display: inline-block
+				width: 30px
+				height: 30px
+				margin-right: 12px
+				background: $bg-dark-color
+			&-2::before
+				content: "\f007"
+			&-3::before
+				content: "\f5ad"
+		&__description
+			margin: 0
+			padding: 16px 0
+			font-size: 14px
+			font-weight: 400
+			text-align: left

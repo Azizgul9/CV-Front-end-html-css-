@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zadacha3</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="bodyLoad()">
+	<div class="container">
+		<div class="task tasks__task task--g">
+			<p class="code task__code c" >
+				Write a JavaScript program to draw a smile
+			</p>
+			<canvas id="mycanvas" width="400" height="200"></canvas>  
+		</div>
+		<script>
+		//draw a smile
+		function myFace() {  
+			var c = document.getElementById("mycanvas");  
+			var draw = c.getContext("2d");   
+			draw.beginPath();  
+			draw.fillStyle = "yellow";  
+			draw.arc(75, 75, 50, 0, Math.PI * 2, true);   
+			draw.closePath();  
+			draw.fill();  
+		}  
+		function myEye() {  
+			var c = document.getElementById("mycanvas");  
+			var eye = c.getContext("2d");  
+			eye.moveTo(55, 50);  
+			eye.beginPath();  
+			eye.fillStyle = "black";  
+			eye.arc(50, 50, 4, 0, Math.PI * 2, true);  
+			eye.closePath();  
+			eye.fill(); 
+			eye.moveTo(103, 49);  
+			eye.beginPath();  
+			eye.fillStyle = "black";  
+			eye.arc(100, 50, 4, 0, Math.PI * 2, true);  
+			eye.closePath();  
+			eye.fill();  
+		}  
+		function mySmile() {  
+			var c = document.getElementById("mycanvas");  
+			var smile = c.getContext("2d");  
+			smile.moveTo(105, 75);  
+			smile.beginPath();  
+			smile.strokeStyle = "red";  
+			smile.arc(75, 75, 30, 0, Math.PI, false);  
+			smile.stroke();  
+		}  
+		function bodyLoad() {  
+			myFace();  
+			myEye(); 
+			mySmile(); 
+		}
+	</script>
+	<div class="task tasks__task task--h">
+		<p class="code task__code c" >
+			Write a JavaScript program to list the properties of a JavaScript object. Go to the editor <br>
+			Sample object: <br>
+			var student = { <br>
+			name : "David Rayy", <br>
+			class : "VI", <br>
+			grade : 5 }; <br>
+			Sample Output: name, class,grade
+		</p>
+		<button class="btn" onclick="getProperties()">Ответ</button>
+	</div>
+	<script>
+		function getProperties(){
+			var student = { 
+				name : "David Rayy", 
+				class : "VI", 
+				grade : 5 };
+				document.querySelector('.task--h').innerHTML =Object.getOwnPropertyNames(student);
+			}
+		</script>
+	</div>
+</body>
+</html>

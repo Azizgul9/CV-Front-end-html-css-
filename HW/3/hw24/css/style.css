@@ -1,0 +1,350 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Bitter:700|Roboto+Condensed:400,700");
+body {
+  color: #5c5c5c;
+  font-size: 14px;
+  background-color: #fcfcfc;
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 1.3;
+  min-width: 320px;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 960px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.bg-red {
+  background: #ea5a4b;
+}
+
+.active {
+  color: #ea5a4b;
+}
+
+.top {
+  text-align: right;
+  background: #25282b;
+  font-size: 0;
+  padding-right: 54px;
+}
+
+.logo {
+  text-decoration: none;
+  font-family: "Bitter", serif;
+}
+.logo__red {
+  padding: 1px 13px;
+  background: #ea5a4b;
+  color: #fcfcfc;
+  margin-right: 5px;
+}
+
+.header__logo {
+  float: left;
+  margin-right: 20px;
+  font-size: 24px;
+  color: #252525;
+  font-weight: 700;
+  padding: 12px 30px;
+}
+@media screen and (max-width: 600px) {
+  .header__logo {
+    float: none;
+  }
+}
+
+.navigation {
+  position: relative;
+  z-index: 2;
+  background-color: #fcfcfc;
+  -webkit-box-shadow: -2px 2px 1px 0px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: -2px 2px 1px 0px rgba(0, 0, 0, 0.7);
+  box-shadow: -2px 2px 1px 0px rgba(0, 0, 0, 0.7);
+}
+
+.header__nav {
+  text-align: right;
+  padding-top: 20px;
+}
+@media screen and (max-width: 600px) {
+  .header__nav {
+    text-align: center;
+  }
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item {
+  display: inline-block;
+  padding: 0 18px 15px;
+  margin: 0;
+}
+@media screen and (max-width: 365px) {
+  .nav__item {
+    padding: 0 13px 15px;
+  }
+}
+
+.nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #252525;
+  font-weight: 700;
+}
+
+.nav__link:hover {
+  color: #ea5a4b;
+}
+
+.social-1, .social-2, .social-3, .social-4 {
+  display: inline-block;
+  height: 48px;
+  width: 33px;
+  background: url(../images/head-socials.png);
+  background-repeat: no-repeat;
+}
+
+.social-1 {
+  background-position: 0px 0;
+}
+
+.social-2 {
+  background-position: -34px 0;
+}
+
+.social-3 {
+  background-position: -68px 0;
+}
+
+.social-4 {
+  background-position: -102px 0;
+}
+
+.ic-socials-1-1, .ic-socials-1-2, .ic-socials-1-3, .ic-socials-1-4, .ic-socials-1-5, .ic-socials-2-1, .ic-socials-2-2, .ic-socials-2-3, .ic-socials-2-4, .ic-socials-2-5, .ic-socials-3-1, .ic-socials-3-2, .ic-socials-3-3, .ic-socials-3-4, .ic-socials-3-5, .ic-socials-4-1, .ic-socials-4-2, .ic-socials-4-3, .ic-socials-4-4, .ic-socials-4-5 {
+  display: inline-block;
+  height: 33px;
+  width: 33px;
+  background: url(../images/socials.png);
+  background-repeat: no-repeat;
+}
+
+.ic-socials-1-1 {
+  background-position: 0px 0px;
+}
+
+.ic-socials-1-2 {
+  background-position: -39px 0px;
+}
+
+.ic-socials-1-3 {
+  background-position: -78px 0px;
+}
+
+.ic-socials-1-4 {
+  background-position: -117px 0px;
+}
+
+.ic-socials-1-5 {
+  background-position: -156px 0px;
+}
+
+.ic-socials-2-1 {
+  background-position: 0px -39px;
+}
+
+.ic-socials-2-2 {
+  background-position: -39px -39px;
+}
+
+.ic-socials-2-3 {
+  background-position: -78px -39px;
+}
+
+.ic-socials-2-4 {
+  background-position: -117px -39px;
+}
+
+.ic-socials-2-5 {
+  background-position: -156px -39px;
+}
+
+.ic-socials-3-1 {
+  background-position: 0px -78px;
+}
+
+.ic-socials-3-2 {
+  background-position: -39px -78px;
+}
+
+.ic-socials-3-3 {
+  background-position: -78px -78px;
+}
+
+.ic-socials-3-4 {
+  background-position: -117px -78px;
+}
+
+.ic-socials-3-5 {
+  background-position: -156px -78px;
+}
+
+.ic-socials-4-1 {
+  background-position: 0px -117px;
+}
+
+.ic-socials-4-2 {
+  background-position: -39px -117px;
+}
+
+.ic-socials-4-3 {
+  background-position: -78px -117px;
+}
+
+.ic-socials-4-4 {
+  background-position: -117px -117px;
+}
+
+.ic-socials-4-5 {
+  background-position: -156px -117px;
+}
+
+.promo-block {
+  margin: 0 -10px;
+  height: 450px;
+  background: url(../images/main-pic.jpg);
+  background-position: 0% 62%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+@media screen and (max-width: 900px) {
+  .promo-block {
+    background-position: 71% 62%;
+  }
+}
+@media screen and (max-width: 860px) {
+  .promo-block {
+    background-position: 49% 62%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .promo-block {
+    background-position: 44% 62%;
+  }
+}
+.promo-block__promotion {
+  color: #fff;
+  font-family: "Bitter", serif;
+  transform: translate(4%, 75%);
+}
+.promo-block__promotion .desc {
+  margin: 1px 0;
+  padding: 5px;
+  background: rgba(17, 17, 17, 0.7);
+  display: inline-block;
+  font-size: 24px;
+}
+
+.introdactory {
+  padding: 52px 10px 57px;
+  background: url(../images/bg-white.jpg);
+  margin: 0 -10px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards .card {
+  padding: 0 22px;
+  width: 33.3333333333%;
+}
+@media screen and (max-width: 700px) {
+  .cards .card {
+    width: 100%;
+  }
+}
+.cards .card-title {
+  margin: 0;
+  font-family: "Bitter", serif;
+  font-size: 18px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.cards .card-title::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 12px;
+  background: #25282b;
+}
+.cards .card-title-2::before {
+  content: "";
+}
+.cards .card-title-3::before {
+  content: "";
+}
+.cards .card__description {
+  margin: 0;
+  padding: 16px 0;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.footer {
+  border-top: 10px solid #ea5a4b;
+  background: url(../images/bg-dark.jpg);
+  padding-bottom: 62px;
+}
+
+.infos {
+  margin: 0 -10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.infos .info {
+  width: 31.25%;
+  padding: 0 30px;
+}
+@media screen and (max-width: 700px) {
+  .infos .info {
+    width: 100%;
+  }
+}
+.infos .post__title, .infos .about__title, .infos .socials__title {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 67px 20px 5px;
+  color: #fff;
+}
+.infos .post__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.infos .post__item {
+  padding: 10px 0 12px;
+  border-bottom: 1px solid #5c5c5c;
+  font-family: "Bitter", serif;
+}
+.infos .about__info {
+  margin: 0;
+  padding: 14px 5px;
+  font-weight: 700;
+}

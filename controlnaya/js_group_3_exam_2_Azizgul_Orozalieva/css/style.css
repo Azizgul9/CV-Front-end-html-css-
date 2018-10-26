@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500|Raleway:400,400i,700');
+body{
+  color: #adadad;
+  background: #fff;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.3;
+  font-size: 16px;
+  min-width: 480px;
+}
+/*font-family: 'Raleway', sans-serif;
+font-family: 'Maven Pro', sans-serif;*/
+.container{
+    min-width: 480px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header{
+	height: 68px;
+}
+.logo{
+	display: inline-block;
+	font-size: 0;
+	background: url(../images/logo.png) 0 0 no-repeat;
+	width: 248px;
+	height: 51px;
+}
+.btn-nav{
+	width: 120px;
+	height: 68px;
+	background: #a6a7b3;
+	float: right;
+	border: none;
+	position: relative;
+}
+.btn-nav i{
+	position: absolute;
+	width: 17px;
+	height: 2px;
+	background: #fff;
+	top: 50%;
+	left: 50%;
+	margin: -1px 0 0 -9px;
+}
+.btn-nav i::after,
+.btn-nav i::before{
+	content: "";
+	position: absolute;
+	width: 17px;
+	height: 2px;
+	background: #fff;
+	left: 0;
+}
+.btn-nav i::after{
+    top:-6px;
+}
+.btn-nav i::before{
+    top:6px;
+}
+.btn-nav.is-active i{
+	background: transparent;
+}
+.btn-nav.is-active i::after{
+    transform: rotate(45deg);
+    top: 0;
+}
+.btn-nav.is-active i::before{
+   transform: rotate(-45deg);
+   top: 0;
+}
+.main-nav{
+    position: relative;
+    padding: 0;
+}
+.main-nav ul{
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 70%;
+	list-style: none;
+	background: #a6a7b3;
+	margin: 0;
+	padding: 10px;
+	z-index: 1;
+}
+.main-nav li{
+	margin: 0;
+	padding: 0;
+}
+.main-nav a{
+	color: #fff;
+	font-size: 12px;
+	text-transform: uppercase;
+	display: block;
+	padding: 8px 10px;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	border-bottom: 1px solid rgba(255,255,255,0.7);
+}
+.promo-block{
+	height: 792px;
+	width: 100%;
+	background-size:cover; 
+	text-align: center;
+	background: url(../images/main-pic.jpg) 50% 0 no-repeat;
+}
+.promo-block h1{
+	margin: 0;
+	padding: 17% 0;
+	font-size: 48px;
+	font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+}
+.promo-block h1::after{
+   content: "";
+   background: url(../images/ic-triple.png) 0 0 no-repeat;
+   display: none;
+   width: 102px;
+   height: 110px;
+   position: absolute;
+   bottom: 12%;
+   left: 50%;
+   font-size: 0;
+}
+form{
+	font-size: 0;
+}
+.input-field{
+	vertical-align: top;
+	width: 270px;
+	height: 55px;
+	display: inline-block;
+	background: #fff;
+	border-top: 20px solid #dddddd;
+	border-bottom: 20px solid #dddddd;
+	border-left:20px solid #dddddd ;
+	border-right:20px solid #dddddd ;
+}
+.input-field:first-child{
+	border-left:20px solid #dddddd ;
+}
+.input-field:last-child{
+	border-right:20px solid #dddddd ;
+}
+input{
+   background: transparent;
+}
+.input-field input,select{
+	font-size: 18px;
+	font-weight: 400;
+	height: 100%;
+	width: 100%;
+	display: block;
+	outline: none;
+	background: transparent;
+	border:none;
+	padding: 0px 12px 0 12px; 
+}
+ select {
+  background: #ffe13e url(../images/ic-select.png);
+  background-position: 60% 50%;
+  background-repeat: no-repeat;
+ /*  отменяем стандартный внешний вид стрелочки */
+  -webkit-appearance: none; 
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';  
+  -ms-appearance: none;
+  appearance: none!important;
+}
+select::-ms-expand {
+  display: none;
+} 
+.services{
+	background: #202242;
+	text-align: center;
+}
+.services .container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.service{
+	width: 41.66%;
+	padding: 10% 36px;
+	font-size: 14px;
+	color: #fff;
+	font-weight: 400;
+	line-height: 24px;
+}
+.service h3{
+	margin: 0;
+	padding: 0;
+	font-size: 36px;
+	font-weight: 700;
+	white-space: nowrap;
+	position: relative;
+}
+.service h3::before{
+	content: "";
+	display: none;
+	height: 169px;
+	margin-left: 20%;
+	margin-bottom: 19%;
+	background: url(../images/ic-webhost-device.png) 0 0 no-repeat;
+}
+.service-2 h3::before{
+   background: url(../images/ic-domain.png) 0 0 no-repeat;
+}
+.service a{
+	width: 154px;
+	font-weight: 700;
+	font-size: 18px;
+	display: inline-block;
+	padding: 14px;
+	text-decoration: none;
+	color: #fff;
+	border:2px solid #fff;
+}
+.features{
+	background: #fbf8f1;
+	text-align: center;
+}
+.features h4,h6{
+	margin: 0;
+}
+.features .container{
+	background: url(../images/bg-snowflake.png) 50% 0 no-repeat;
+}
+.features h4{
+    color: #202242;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    padding: 4% 0 1% 10%;
+
+}
+.features h6{
+	font-size: 24px;
+	font-weight: 400;
+	color:#202242;
+	margin-bottom: 11%;
+}
+.items{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.item{
+	width: 250px;
+	padding: 25px;
+	margin-top: 10px;
+}
+.item h5{
+	white-space: nowrap;
+	font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    color: #f4d320;
+    font-size: 30px;
+    position: relative;
+    margin-top: 42%;
+    margin-bottom: 0;
+}
+.item h5::before{
+	content: "";
+	width: 128px;
+	height: 128px;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 25%;
+	margin-bottom: 97px;
+	background: url(../images/ic-support.png) 0 0  no-repeat;
+} 
+.item-2 h5::before{
+	background: url(../images/ic-cloud.png) 0 0  no-repeat;
+}
+.item-3 h5::before{
+	background: url(../images/ic-data.png) 0 0  no-repeat;
+}
+.item-4 h5::before{
+	background: url(../images/ic-monitoring.png) 0 0  no-repeat;
+}
+.item h5::after{
+	content: "";
+	width: 70px;
+	height: 3px;
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 36%;
+    top: -24px;
+	background: #8d8d99;
+}
+.item p{
+	margin: 0;
+	color: #202242;
+	font-size: 14px;
+    line-height: 24px;
+    padding: 21px 0;
+    margin-bottom: 32%;
+}
+.clients-block .container{
+	padding-top: 77px;
+}
+.img-companies{
+	width: 172px;
+	height: 115px;
+	margin-left: 30px;
+}
+.images{
+	padding: 21px 0 73px;
+}
+.info{
+	float: left;
+	text-align: center;
+	width: 370px;
+}
+.info h5{
+    font-size: 35px;
+    color: #202242;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-family: 'Maven Pro', sans-serif;
+}
+.info p{
+	color: #adadad;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+}
+.commentators{
+	font-style: italic;
+	font-size: 14px;
+	color: #a4a4a4;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.cmnt{
+	background: #faf9f9;
+	width: 600px;
+	padding: 30px 21px 30px 27px;
+	position: relative;
+	margin-bottom: 13%;
+}
+.account{
+	text-decoration: none;
+	color: #696969;
+	font-weight: bold;
+}
+.cmnt::after{
+	position: absolute;
+	content:"";
+	background:url(../images/account-anna.jpg) 50% 50% no-repeat;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	top: 77%;
+	left: 70%;
+}
+.cmtr-2::after{
+	background:url(../images/ic-men.jpg) 41% 15% no-repeat;
+}
+.footer{
+	text-align: center;
+	background: #202242;
+	padding:15px 0 54px;
+	color: #fff;
+	font-size: 14px;
+}
+.footer p::before{
+	margin: 0;
+	display: block;
+	padding-bottom: 14px;
+	content: url(../images/ic-footer.png);
+}

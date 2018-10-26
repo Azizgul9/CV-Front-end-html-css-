@@ -1,0 +1,93 @@
+html,body{
+	height: 100%;
+}
+body{
+	font-family: arial,sans-serif;
+	font-size: 16px;
+	line-height: 1.3;
+	margin: 0;
+	background: #fff;
+	min-width: 998px;
+}
+header{
+	background:#373c3f;
+	padding: 20px 0;
+}
+.container{
+	width: 998px;
+	margin: 0 auto;
+	min-height: 100%;
+}
+.menu{
+	margin-left: 100px;
+}
+.menu a{
+	color: #fff;
+	text-decoration: none;
+	margin-right: 30px;
+	text-transform: uppercase;
+	font-size: 18px;
+
+}
+.proma{
+	background: #16b1c4;
+	padding: 100px 150px 100px 40px;
+}
+.proma h1{
+	color: #fff;
+	font-size: 60px;
+	line-height: 65px;
+	font-weight: normal;
+}
+.proma a{
+	font-size: 34px;
+	color: rgba(255,255,255,0.5);
+	text-decoration: none;
+}
+
+.robin{
+	background: #bc3183;
+}
+.dark{
+	background: #27212c;
+	font-size: 30px;
+	color:  #9282a0;
+	width: 75%;
+	padding: 70px 80px 70px 50px;
+	box-sizing: border-box;
+}
+img{
+	display: block;
+}
+ .info-block{
+	background: #ebebeb;
+	padding: 30px 40px 30px 50px;
+	/*!!!!!!!!!*/
+	
+} 
+h3{
+	color: #088ca5;
+	font-size: 30px;
+}
+p{
+	font-size: 24px;
+	color: #515151;
+	line-height: 36px;
+}
+.psevdo-footer{
+	height: 80px;
+}
+footer{
+	margin-top: -80px;
+	background: #373c3f;
+	padding: 20px;
+	height: 80px;
+	box-sizing: border-box;
+}
+footer a{
+	font-size: 16px;
+	color: #eee;
+	text-decoration: none;
+	margin: 30px 40px 40px 60px;
+}
+

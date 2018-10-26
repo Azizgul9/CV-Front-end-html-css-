@@ -1,0 +1,134 @@
+@media screen and (max-width: 1040px){
+.client{
+    padding: 2% 6% 2% 19%;
+    width: 395px;	
+}
+.client p::before{
+		left: 2%;
+	}
+}
+.clients-box{
+	justify-content: space-around;
+}
+.services{
+		justify-content: space-around;
+	}
+.service{
+		width: 446px;
+	}
+}
+@media screen and (max-width: 916px){
+.service{
+	width: 385px;
+}
+}
+@media screen and (max-width: 901px){
+.service{
+	width: 388px;
+}
+}
+@media screen and (max-width: 800px){
+.client{
+    padding: 4% 5% 4% 22%;
+    width: 504px;
+}
+.service{
+		width: 380px;
+	}
+}
+@media screen and (max-width: 776px){
+.service{
+		width: 331px;
+	}
+}
+@media screen and (max-width: 680px){
+	.header{
+		text-align: center;
+		height: 124px;
+	}
+	.logo{
+		display: block;
+		float: none;
+		margin: 0 auto;
+	}
+	.main-nav{
+		display: block;
+        text-align: center;
+	}
+	.main-nav li{
+		margin: 0;
+	}
+	.main-block .container{
+	padding: 7% 0 30%;
+}
+	.main-pic{
+	width: 80%;
+	left: 10%;
+	bottom:-40px;
+	margin-left: 0px;
+}
+.service{
+		width: 300px;
+	}
+.ic-service{
+	left: 6%;
+}
+.service-block h2{
+    margin: 14% 5% 0;
+}
+.client{
+	padding: 4% 4% 4% 22%;
+	width: 418px;
+	margin: 0 auto 10px;
+}
+.client p::before {
+	background: url(../images/michel.jpg) 43% 41% no-repeat;
+    width: 97px;
+    height: 97px;
+}
+
+}
+@media screen and (max-width: 616px){
+	.services{
+		justify-content: space-around;
+	}
+	.service{
+		width: 407px;
+		padding: 2% 6% 2% 14%;
+	}
+}
+@media screen and (max-width: 493px){
+	.client{
+	padding: 4% 4% 4% 33%;
+	width: 418px;
+	margin: 0 auto 10px;
+}
+.client p::before {
+	background: url(../images/michel.jpg) 43% 41% no-repeat;
+    width: 97px;
+    height: 97px;
+}
+}
+@media screen and (max-width: 480px){
+	.client p::before{
+		left: 1%;
+	}
+	.client{
+	padding: 4% 4% 4% 33%;
+	width: 335px;
+	margin: 0 auto 10px;
+}
+	.service{
+		width: 315px;
+	}
+	.ic-service{
+	left: 1%;
+}
+}
+@media screen and (max-width: 454px){
+	.client{
+	padding: 4% 4% 4% 33%;
+	width: 335px;
+	margin: 0 auto 10px;
+}
+}

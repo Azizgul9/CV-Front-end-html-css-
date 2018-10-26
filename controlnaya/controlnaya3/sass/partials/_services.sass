@@ -1,0 +1,103 @@
+.services
+	background: $bg-ccc
+	padding: 49px 0 79px
+	%br4
+		border-radius: 4px
+	.service
+		background: $bg-dark-ccc
+		@extend %br4
+		padding: 23px 26px
+		margin-bottom: 50px
+	.s-title
+		margin: 0
+		font-size: 30px
+		color: #7f8c8c
+	.s-desc
+		margin: 0
+	.s-link
+		margin-right: 19px
+		padding: 13px 43px
+		font-size: 20px
+		@extend %btn
+		@extend %red-border
+		background: $bg-btn-red
+	.service-f
+		width: percentage(871/1200)
+		float: left
+		+px800
+			float: none
+			text-align: center
+	.services__s-link
+		float: right
+		+px800
+			float: none
+			display: inline-block
+			margin: 20px
+	.details
+		margin: 0 -15px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		+px874
+			justify-content: space-around
+		.detail
+			text-align: center
+			padding: 42px 15px 37px
+			width: percentage(270/1200)
+			+px874
+				width: 40%
+				margin-bottom: 50px
+			+px660
+				width: 90%
+			background: #f8f8f8
+			position: relative
+			@extend %grey-border-button
+			@extend %br4
+			.d-title
+				font-size: 16px
+				color: #7f8c8c
+				font-weight: 800
+				text-transform: uppercase
+				margin: 0
+				&::before
+					content: "\f164"
+					font-family: 'Font Awesome 5 Free'
+					font-weight: 900
+					display: block
+					font-size: 52px
+					margin-bottom: 10px
+					color: $bg-btn-blue
+				&--2::before
+					content: "\f084"
+				&--3::before
+					content: "\f024"
+				&--4::before
+					content: "\f0c3"
+		.description
+			margin: 28px 0
+			line-height: 20.8px
+		.d-link
+			@extend %btn
+			font-weight: 800
+		.d-link-b
+			@extend %btn
+			@extend %blue-border
+			background: $bg-btn-blue
+			font-size: 15px
+			width: 199px
+			padding: 15px 55px
+		.detail:hover
+			background: #fff
+		.detail:hover .d-title::before
+			color: $bg-btn-red
+		.detail:hover .d-link-b
+			background: $bg-btn-red
+			@extend %red-border
+		.d-detail:hover .d-title::before
+				color: $bg-btn-red
+		.d-link-b:hover
+			@extend %red-border
+			background: $bg-btn-red
+		.d-link-b--bot
+			+position(absolute,null,null,-7%,50%)
+			margin-left: -99.5px

@@ -1,0 +1,33 @@
+.footer
+	background: #6ab3ac
+	color: #fff
+	.footer-info
+		padding: 17px 10px 4px
+		margin: 0 -15px
+		+px380
+			margin: 0
+		.subs-f
+			margin: 0
+			float: left
+			+px380
+				float: none
+				margin-bottom: 40px
+				text-align: center
+		.socials
+			display: inline-block
+			float: right
+			text-align: right
+			margin-right: 20%
+			+px380
+				text-align: center
+			@each $icon in tw,fc,pin,gplus
+				.ic-#{$icon}
+					background-repeat: no-repeat
+					background-position: 50% 50%
+					background-image: url(../images/ic-#{$icon}.png) 		
+			.links
+				display: inline-block
+				width: 32px
+				height: 32px
+				margin-top: -5px
+				

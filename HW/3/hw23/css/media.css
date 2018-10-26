@@ -1,0 +1,19 @@
+@media (max-width: 900px){
+	.header{
+		text-align: center;
+	}
+	.header__logo{
+		float: none;
+		margin-bottom: 20px;
+	}
+	.header__nav{
+		text-align: center;
+	}
+	.footer{
+		text-align: center;
+	}
+	.footer__info{
+		float: none;
+		padding-bottom: 20px;
+	}
+}

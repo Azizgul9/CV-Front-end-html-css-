@@ -1,0 +1,40 @@
+@media (max-width: 900px){
+	.btn{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.header{
+		text-align: center;
+	}
+	.header__logo{
+		float: none;
+		margin-bottom: 20px;
+	}
+	.header__nav{
+		text-align: center;
+	}
+	.footer {
+		text-align: center;
+	}
+	.footer__info{
+		float: none;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+}
+@media (max-width: 620px){
+	.work-item{
+		width: 50%;
+	}
+	.work-item__desc{
+		font-size: 16px;
+	}
+}
+@media (max-width: 480px){
+	.btn{
+		font-size: 20px;
+	}
+	.field{
+		font-size: 18px;
+	}
+}

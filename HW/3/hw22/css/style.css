@@ -1,0 +1,636 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro");
+body {
+  color: #fff;
+  font-size: 16px;
+  background-color: #245963;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.3;
+  min-width: 320px;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.introduction-block {
+  text-align: center;
+  display: inline-block;
+  transform: translate(-50%, 50%);
+  margin-left: calc(100% - 50%);
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 944px) {
+  .introduction-block {
+    transform: translate(-50%, 10%);
+  }
+}
+@media screen and (max-width: 800px) {
+  .introduction-block {
+    transform: translate(-50%, 10%);
+  }
+}
+.introduction-block .main-title {
+  font-size: 41px;
+  margin: 0;
+  padding: 39px 20px 16px;
+  letter-spacing: 5px;
+}
+@media screen and (max-width: 740px) {
+  .introduction-block .main-title {
+    font-size: 31px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .introduction-block .main-title {
+    letter-spacing: 3px;
+  }
+}
+.introduction-block .sub-title {
+  font-size: 31px;
+  margin: 0 0 14px;
+  padding: 0 20px;
+}
+@media screen and (max-width: 740px) {
+  .introduction-block .sub-title {
+    font-size: 21px;
+  }
+}
+
+.promo-block__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.promo-block__items .promo-block__item {
+  width: 50%;
+  padding: 50px 80px;
+}
+@media screen and (max-width: 944px) {
+  .promo-block__items .promo-block__item {
+    width: 100%;
+  }
+}
+.promo-block__items .bg-red {
+  background: #e84c3d;
+}
+.promo-block__items .bg-yellow {
+  background: #fdbd1f;
+}
+.promo-block__items .bg-green {
+  background: #1bbc9b;
+}
+.promo-block__items .bg-purple {
+  background: #9b58b5;
+}
+
+.promo-block__item {
+  text-align: center;
+}
+.promo-block__item .item__title {
+  font-size: 29px;
+  text-transform: uppercase;
+}
+.promo-block__item .item__title::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: block;
+  color: #245963;
+  font-size: 66px;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  transform: translateX(150%);
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 944px) {
+  .promo-block__item .item__title::before {
+    transform: translateX(300%);
+  }
+}
+@media screen and (max-width: 800px) {
+  .promo-block__item .item__title::before {
+    transform: translateX(200%);
+  }
+}
+@media screen and (max-width: 740px) {
+  .promo-block__item .item__title::before {
+    transform: translateX(150%);
+  }
+}
+@media screen and (max-width: 500px) {
+  .promo-block__item .item__title::before {
+    transform: translateX(51%);
+  }
+}
+@media screen and (max-width: 340px) {
+  .promo-block__item .item__title::before {
+    transform: translateX(40%);
+  }
+}
+.promo-block__item .item__title--2::before {
+  content: "";
+  color: #29606b;
+}
+.promo-block__item .item__title--3::before {
+  content: "";
+  color: #fdbd1f;
+}
+.promo-block__item .item__title--4::before {
+  content: "";
+  color: #e84c3d;
+}
+.promo-block__item .item__descript {
+  font-size: 16px;
+}
+
+.tempor-block {
+  text-align: center;
+}
+.tempor-block__title {
+  margin: 0;
+  padding: 80px 20px 20px;
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  font-size: 29px;
+}
+.tempor-block__subtitle {
+  margin: 0;
+  padding: 20px 20px 40px;
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+.tempor-block__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 944px) {
+  .tempor-block__cards {
+    justify-content: space-around;
+  }
+}
+.tempor-block__card {
+  background: #245963;
+  margin: 0 -15px;
+  padding: 40px 30px 30px;
+  width: 30.8333333333%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 944px) {
+  .tempor-block__card {
+    padding: 0px 30px 30px;
+  }
+}
+@media screen and (max-width: 944px) {
+  .tempor-block__card {
+    width: 100%;
+  }
+}
+.tempor-block__card--1 {
+  border-top: 10px solid #e84c3d;
+}
+.tempor-block__card--2 {
+  border-top: 10px solid #fdbd1f;
+}
+.tempor-block__card--3 {
+  border-top: 10px solid #1bbc9b;
+}
+.tempor-block .card__description {
+  padding: 40px 0;
+  font-size: 16px;
+  color: #76b2be;
+}
+.tempor-block .card__description::before {
+  content: "";
+  width: 186px;
+  height: 186px;
+  display: block;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  transform: translateX(25%);
+  background: url(../images/model-1.jpg) 50% 19% no-repeat;
+}
+@media screen and (max-width: 944px) {
+  .tempor-block .card__description::before {
+    transform: translateX(172%);
+  }
+}
+@media screen and (max-width: 800px) {
+  .tempor-block .card__description::before {
+    transform: translateX(140%);
+  }
+}
+@media screen and (max-width: 740px) {
+  .tempor-block .card__description::before {
+    transform: translateX(100%);
+  }
+}
+@media screen and (max-width: 600px) {
+  .tempor-block .card__description::before {
+    transform: translateX(70%);
+  }
+}
+@media screen and (max-width: 500px) {
+  .tempor-block .card__description::before {
+    transform: translateX(40%);
+  }
+}
+@media screen and (max-width: 340px) {
+  .tempor-block .card__description::before {
+    transform: translateX(25%);
+  }
+}
+.tempor-block .card__description--2::before {
+  background: url(../images/model-2.jpg) 50% 19% no-repeat;
+}
+.tempor-block .card__description--3::before {
+  background: url(../images/model-3.jpg) 50% 19% no-repeat;
+}
+
+.bg-page-light {
+  background: #29606b;
+}
+
+.btn-red, .btn-yellow, .btn-green {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 15px;
+  padding: 10px 20px;
+  position: relative;
+  display: inline-block;
+}
+.btn-red::before, .btn-yellow::before, .btn-green::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 11px 0 11px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -11px;
+}
+
+.btn-red {
+  background: #e84c3d;
+}
+.btn-red::before {
+  border-color: #e84c3d transparent transparent transparent;
+}
+
+.btn-yellow {
+  background: #fdbd1f;
+}
+.btn-yellow::before {
+  border-color: #fdbd1f transparent transparent transparent;
+}
+
+.btn-green {
+  background: #1bbc9b;
+}
+.btn-green::before {
+  border-color: #1bbc9b transparent transparent transparent;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+.btn2 {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 15px;
+  position: relative;
+}
+.btn2::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg);
+  bottom: -7px;
+  left: 50%;
+  margin-left: -8px;
+}
+.btn2 span {
+  padding: 11px 47px;
+  display: block;
+  border: 2px solid #fff;
+  border-bottom: none;
+}
+.btn2 span::before, .btn2 span::after {
+  content: "";
+  width: calc(50% - 10px);
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+}
+.btn2 span::before {
+  left: 0;
+}
+.btn2 span::after {
+  right: 0;
+}
+
+.btn3 span::before {
+  width: calc(50% - 17px);
+  left: 7px;
+}
+
+.btn3 span::after {
+  width: calc(50% - 17px);
+  right: 7px;
+}
+
+.head-block {
+  background: url(../images/main-pic.jpg) 50% 0 no-repeat;
+  background-size: cover;
+  height: 600px;
+  overflow: hidden;
+}
+.head-block .header {
+  background-color: rgba(36, 93, 103, 0.9);
+  opacity: 0.9;
+  padding: 25px 0 29px;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Fjalla One", sans-serif;
+  border: 1px solid #387d89;
+}
+.head-block .logo {
+  text-decoration: none;
+  color: #fff;
+}
+.head-block .nav {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+}
+.head-block .nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.head-block .nav__item {
+  display: inline-block;
+  padding: 0 23px;
+  margin: 0;
+}
+@media screen and (max-width: 500px) {
+  .head-block .nav__item {
+    padding: 0 10px;
+  }
+}
+.head-block .nav__link {
+  text-decoration: none;
+  color: #fff;
+}
+.head-block .header__logo {
+  float: left;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+@media screen and (max-width: 520px) {
+  .head-block .header__logo {
+    float: none;
+  }
+}
+.head-block .header__nav {
+  text-align: right;
+  padding-top: 7px;
+}
+@media screen and (max-width: 520px) {
+  .head-block .header__nav {
+    text-align: center;
+  }
+}
+
+.form {
+  text-align: center;
+  width: 47.5%;
+  margin: 0 auto;
+  padding: 40px 0 70px;
+}
+@media screen and (max-width: 740px) {
+  .form {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .form {
+    width: 85%;
+  }
+}
+.form .form__title {
+  text-align: center;
+  margin: 0;
+  padding: 20px 10px;
+  font-size: 29px;
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+  white-space: nowrap;
+}
+.form::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: block;
+  font-size: 66px;
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  transform: translateX(190%);
+  margin-bottom: 20px;
+  border-radius: 50%;
+  color: #1bbc9b;
+}
+@media screen and (max-width: 944px) {
+  .form::before {
+    transform: translateX(132%);
+  }
+}
+@media screen and (max-width: 740px) {
+  .form::before {
+    transform: translateX(100%);
+  }
+}
+@media screen and (max-width: 600px) {
+  .form::before {
+    transform: translateX(90%);
+  }
+}
+@media screen and (max-width: 500px) {
+  .form::before {
+    transform: translateX(111%);
+  }
+}
+@media screen and (max-width: 410px) {
+  .form::before {
+    transform: translateX(62%);
+  }
+}
+.form .form__subtitle {
+  text-transform: uppercase;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 21px;
+  margin: 0;
+  padding: 0 10px 20px;
+  position: relative;
+}
+.form .form__subtitle::before,
+.form .form__subtitle::after {
+  content: "";
+  width: 20%;
+  height: 1px;
+  margin: 0 5px;
+  position: absolute;
+  top: 25%;
+  background: #387d89;
+  display: inline-block;
+}
+@media screen and (max-width: 1040px) {
+  .form .form__subtitle::before,
+  .form .form__subtitle::after {
+    width: 13%;
+  }
+}
+@media screen and (max-width: 944px) {
+  .form .form__subtitle::before,
+  .form .form__subtitle::after {
+    width: 0;
+  }
+}
+.form .form__subtitle::before {
+  left: 0;
+}
+.form .form__subtitle::after {
+  right: 0;
+}
+.form input, .form textarea {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.form .fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 740px) {
+  .form .fields {
+    justify-content: space-around;
+  }
+}
+.form .field {
+  width: 47.3684210526%;
+  height: 47px;
+  display: inline-block;
+  border: 2px solid #387d89;
+  margin-bottom: 20px;
+  background: #245963;
+}
+@media screen and (max-width: 740px) {
+  .form .field {
+    width: 100%;
+  }
+}
+.form .field__txt {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.form .btn3 {
+  display: block;
+  margin: 0 auto;
+  background: #245963;
+}
+
+.footer {
+  padding: 40px 0;
+  font-size: 16px;
+}
+
+.info {
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+.info .fc, .info .tw {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-bottom: -5px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+}
+.info .tw {
+  margin-left: 0;
+}
+.info .fc::before {
+  content: "";
+  display: inline-block;
+  font-family: "Font Awesome 5 Brands";
+  position: absolute;
+  top: 14%;
+  left: 32%;
+  font-size: 15px;
+  font-weight: 400;
+  color: #245963;
+}
+.info .tw::before {
+  content: "";
+  display: inline-block;
+  font-family: "Font Awesome 5 Brands";
+  position: absolute;
+  top: 14%;
+  left: 23%;
+  font-size: 15px;
+  font-weight: 400;
+  color: #245963;
+}
+.info::after {
+  content: "";
+  width: 40%;
+  height: 1px;
+  background: #387d89;
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -20%;
+}
+
+@media screen and (max-width: 410px) {
+  .info__mail, .info__tell {
+    display: block;
+    padding: 10px 0;
+  }
+}
+
+.yellow {
+  color: #fdbd1f;
+}

@@ -1,0 +1,140 @@
+html,body{
+  height: 100%;
+}
+body{
+  color: #5b5b5b;
+  font-family: arial, sans-serif;
+  background: #fff;
+  line-height: 1.3;
+  font-size: 13px;
+  min-width: 998px;
+  margin: 0;
+}
+.container{
+  width: 998px;
+  margin: 0 auto;
+  min-height: 100%;
+}
+.logo a{
+  display: inline-block;
+  padding-left: 80px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  background:url(../img/logo.png)  no-repeat;
+  margin-left: 5px;
+  text-decoration: none;
+  color: black;
+}
+ .main-nav a{
+  text-decoration: none;
+  font-size: 15px;
+  margin-left: 40px;
+  color: black;
+  font-weight: bold;
+}
+ 
+.promo{
+  padding: 10px;
+  position: relative;
+
+}
+.promo img{
+  width: 100%;
+  height: auto;
+}
+.promo-info{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 900px;
+  margin-left: -450px;
+  margin-top: -100px;
+  text-align: center;
+  color: #fff;
+}
+.promo-info p{
+  font-size: 48px;
+  font-weight: bold;
+}
+.promo-info span{
+  display: block;
+  font-size: 30px;
+}
+.promo-info button{
+  padding: 10px 25px;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  background: #f8cd53;
+  font-size: 23px;
+  border-radius: 5px;
+}
+
+ h4{
+  padding-top:70px;
+  text-align: center;
+  font-size:36px;
+  font-weight: bold;
+  color:   #424242;
+  margin: 0;
+}
+ h6{
+  text-align: center;
+  font-size:20px;
+  font-weight: bold;
+  color:   #424242;
+  margin: 0;
+}
+.ikon-block{
+margin-top: 50px;
+padding: 40px;
+margin-left:25px;
+display: inline-block;
+width: 300px;
+box-sizing: border-box;
+vertical-align: top;
+}
+.ikon-block a{
+  display: inline-block;
+  padding-top: 70px;
+  margin-left: 5px;
+  text-decoration: none;
+  color:#424242;
+  font-weight: bold;
+  font-size: 22px;
+  box-sizing: border-box;
+}
+.ikon-block p{
+  font-size: 13px;
+  color:  #5b5b5b;
+  text-align: center;
+}
+
+.ikon-1 a{
+  background: url(../img/ic-hand.png) no-repeat 45% 25%;
+}
+.ikon-2 a{
+  background: url(../img/ic-book.png) no-repeat 45% 25%;
+}
+.ikon-3 a{
+  background: url(../img/ic-comment.png) no-repeat 45% 25%;
+}
+.psevdo-footer{
+  height: 80px;
+}
+footer{
+  margin-top: -80px;
+  background: #515151;
+  padding: 20px;
+  height: 80px;
+  text-align: right;
+  box-sizing: border-box;
+}
+footer a{
+  display: inline-block;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  margin-top: 15px;
+}
+

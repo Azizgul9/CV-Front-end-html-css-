@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zadacha2</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="task tasks__task task--a">
+		<h4 class="sub-title tasks__sub-title">Задача #2
+		</h4>
+		<p class="code task__code a">
+			Write a JavaScript program to display the current day and time in the following format. <br> 
+			Sample Output : <br>
+			Today is : Friday. <br>
+			Current time is : 4 PM : 50 : 22 <br>	
+
+		</p>
+		<button class="btn" onclick="task2()">Ответ</button>
+	</div>
+	<script>
+		function task2(){
+		var today = new Date();  
+var day = today.getDay();  
+var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];  
+var week="Today is : " + daylist[day] + ".<br>";  
+var hour = today.getHours();  
+var minute = today.getMinutes();  
+var second = today.getSeconds();  
+var prepand = (hour >= 12)? " PM ":" AM ";  
+hour = (hour >= 12)? hour - 12: hour;  
+if (hour===0 && prepand===' PM ')   
+{   
+if (minute===0 && second===0)  
+{   
+hour=12;  
+prepand=' Noon';  
+}   
+else  
+{   
+hour=12;  
+prepand=' PM';  
+}   
+}   
+if (hour===0 && prepand===' AM ')   
+{   
+if (minute===0 && second===0)  
+	{   
+hour=12;  
+prepand=' Midnight';  
+}   
+else  
+{   
+hour=12;  
+prepand=' AM';  
+}   
+}  
+document.querySelector('.task--a').innerHTML =week+"Current Time : "+hour + prepand + " : " + minute + " : " + second;
+	}
+	</script>
+	<div class="task tasks__task task--b">
+		<p class="code task__code b" >
+			Write a JavaScript function that reverse a number. <br>
+			Example x = 32243; <br>
+			Expected Output : 34223 <br>
+		</p>
+		<button class="btn" onclick="task2b()">Ответ</button>
+	</div>	
+	<script>
+		function task2b(){
+	var str=prompt("enter num");    
+	let reversed = "";
+  for (var i = str.length - 1; i >= 0; i--){        
+    reversed += str[i];
+  }    
+	document.querySelector('.task--b').innerHTML =reversed;
+}
+	</script>
+<div class="task tasks__task task--c">
+		<p class="code task__code c" >
+			Write a JavaScript program to calculate the factorial of a number. In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. <br>
+			For example, 5! = 5 x 4 x 3 x 2 x 1 = 120 
+		</p>
+		<button class="btn" onclick="task2c()">Ответ</button>
+	</div>
+	<script>
+		function task2c(){
+	var n=parseInt(prompt("Enter a number:",n));
+	var k=n;
+	for(var i=n-1;i>1;i--){
+		n*=i;
+	}
+	document.querySelector('.task--c').innerHTML =k+"! = "+n;
+}
+	</script>
+<div class="task tasks__task task--d">
+		<p class="code task__code c" >
+			Write a JavaScript program that accept two integers and display the larger.
+		</p>
+		<button class="btn" onclick="LargerNum()">Ответ</button>
+	</div>
+<script>
+	function LargerNum(){
+	var a=parseInt(prompt("Enter num1:",a));
+	var b=parseInt(prompt("Enter num1:",b));
+	var answer=(a>b) ? a : 
+	b;
+	document.querySelector('.task--d').innerHTML =answer;
+}
+</script>
+<div class="task tasks__task task--e">
+		<p class="code task__code c" >
+			Write a simple JavaScript program to join all elements of the following array into a string. <br>
+			Sample array : myColor = ["Red", "Green", "White", "Black"];	<br>
+			Expected Output : <br>
+			"Red,Green,White,Black" <br>
+			"Red+Green+White+Black"
+		</p>
+		<button class="btn" onclick="ArrayToString()">Ответ</button>
+	</div>
+	<script>
+		function ArrayToString(){
+	var  myColor = ["Red", "Green", "White", "Black"];
+	for(var i=0;i<myColor.length;i++){
+			myColor.toString();
+			//myColor.join();
+			var plus=myColor.join('+');
+	}
+	document.querySelector('.task--e').innerHTML =myColor+"<br>"+plus;
+}
+	</script>
+	<div class="task tasks__task task--g">
+		<p class="code task__code c" >
+			Write a JavaScript function to get the month name from a particular date. <br>
+			Test Data : <br>
+			console.log(month_name(new Date("10/11/2009"))); <br>
+			console.log(month_name(new Date("11/13/2014"))); <br>
+			Output : <br>
+			"October" <br>
+			"November"
+		</p>
+		<button class="btn" onclick="GetMonth()">Ответ</button>
+	</div>
+	<script>
+		function GetMonth(){
+ 	var month="";
+ 	var month2="";
+ 	var monthes=["January","February","March","April","May","Jun","July","August","September","October","November","Desember"];
+ 	var month_name1=new Date("10/11/2009");
+ 	var month_name2=new Date("11/13/2014");
+ 	for(var i=0;i<=12;i++){
+ 	if(i==month_name1.getMonth()){
+ 		month+=monthes[i];
+ 	}
+ 	if(i==month_name2.getMonth()){
+ 		month2+=monthes[i]
+ 	}
+ }
+ 	document.querySelector('.task--g').innerHTML =month+"<br>"+month2;
+ }
+	</script>
+	<div class="task tasks__task task--f">
+		<p class="code task__code c" >
+			Write a JavaScript program to test the first character of a string is uppercase or not
+		</p>
+		<button class="btn" onclick="isUpper()">Ответ</button>
+	</div>
+	<script>
+		 function isUpper(aChar=prompt("Enter a string:"))
+   {	
+      var myCharCode = aChar.charCodeAt(0);
+   
+      if((myCharCode > 64) && (myCharCode <  91))
+      {
+         answer="Uppercase!";
+      }
+      else
+   			answer="Not an Uppercase!";
+   document.querySelector('.task--f').innerHTML =answer;
+   }
+	</script>
+	</div>
+</body>
+</html>

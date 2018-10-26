@@ -1,0 +1,16 @@
+@media screen and (max-width: 1000px){
+  .item{
+  width: 50%;
+  margin-bottom: 30px;
+       }
+}
+@media screen and (max-width: 580px){
+  .item{
+  width: 100%;
+       }
+}
+@media screen and (max-width: 480px){
+  .process h2{
+  font-size: 30px;
+  }
+}

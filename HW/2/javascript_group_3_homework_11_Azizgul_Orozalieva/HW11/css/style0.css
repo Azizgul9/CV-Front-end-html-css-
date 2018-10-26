@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+body{
+  color: #000;
+  background: #e9e9e9 url(../img/main-pic0.jpg) 50% 97px no-repeat;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.3;
+  font-size: 13px;
+  min-width: 1000px;
+}
+.container{
+  width: 940px;
+  margin: 0 auto;
+}
+.main-nav{
+	background: #52bbde;
+	border-radius: 3px;
+	font-weight: 300;
+	margin-top: 25px;
+}
+.main-nav ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.main-nav > ul{
+	font-size: 0;
+}
+.main-nav > ul > li{
+	display: inline-block;
+	padding: 8px 0 10px;
+	font-size: 24px;
+	position: relative;
+}
+.main-nav > ul > li>a{
+	display: inline-block;
+	padding: 5px 22px;
+	color: #fff;
+	text-decoration: none;
+	border-left: 1px solid #75c9e5;
+	border-right: 1px solid #44a3bf; 
+}
+.main-nav > ul > li:first-child{
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.main-nav > ul > li:first-child a{
+	border-left: none;
+}
+.main-nav > ul > li:last-child a{
+	border-right: none;
+}
+.main-nav .sub > a{
+	padding-right: 35px;
+}
+.main-nav .sub::before{
+	content: "";
+	width: 0;
+    height: 0;
+    position: absolute;
+    top: 25px;
+    right: 22px;
+    border-style: solid;
+    border-width: 6px 4px 0 4px;
+    border-color: #fff transparent transparent transparent;
+}
+.main-nav > ul > li:hover{
+	background: #4292ad;
+	margin-left: 1px;
+	margin-left:-1px;
+}
+.main-nav > ul > li:first-child:hover{
+	margin-left: 0;
+	padding-left: 0;
+}
+.main-nav > ul > li:hover a{
+	border-color:transparent;
+}
+.main-nav > ul > li:hover + li > a{
+	border-color:transparent;
+}
+.sub-nav{
+	display: none;
+	position: absolute;
+	top: 59px;
+	left: 0;
+	background: #4292ad;
+	padding: 9px 0 5px;
+	white-space: nowrap;
+	min-width: 250px;
+}
+.main-nav > ul > li:hover .sub-nav{
+	display: block;
+}
+.sub-nav li{
+	margin-bottom: 2px;
+}
+.sub-nav a{
+	display: block;
+	padding: 7px 25px;
+	font-weight: 400;
+	text-decoration: none;
+	font-size: 18px;
+	color: #fff;
+}
+.sub-nav a:hover{
+	color: #1b3e4a;
+	background: #61a5bc;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zadacha1</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="task tasks__task task--1">
+				<h4 class="sub-title tasks__sub-title">Задача #1
+				</h4>
+					for (var i = 0; i &lt; 10; i++){ <br>
+					setTimeout(function() { <br>
+					console.log(i); <br>
+				}, 0); <br>
+			} <br>
+			Что выведет консоль и почему? <br>
+		<button class="btn" onclick="task1()">Ответ</button>
+	</div>
+	</div>
+	<script>
+		function task1(){
+		var t="";
+		var r1="";
+		var r2="";
+		r1="Выдаст:<br>";
+		for (var i = 0; i < 10; i++) {
+			setTimeout(function() {
+				t+=" "+i;
+				r2="<br>Потому что, проблема впеременной i, проходящая внутри delay(замыкающая) функции setTimeout().Речь не о конкретном значении i в момент цикла,мы просто проходим по i. Затем по времени уже setTimeout() будет воспроизведена, а выражение for уже будет инкрементирована и примет финальное значение"
+				document.querySelector('.task--1').innerHTML =r1+ t+r2;  
+			}, 0);
+		}
+	}
+	</script>
+</body>
+</html>
